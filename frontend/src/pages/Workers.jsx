@@ -17,7 +17,7 @@ function Workers() {
 
   useEffect(() => {
     axios
-      .get("http://localhost:5000/api/workers")
+      .get("https://fixnear-backend.onrender.com/api/workers")
       .then((res) => setWorkers(res.data))
       .catch((err) => console.log(err));
   }, []);
