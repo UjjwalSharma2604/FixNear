@@ -1,0 +1,172 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #f4f7fc;
+}
+
+/* Navbar */
+
+.navbar {
+  background: #2563eb;
+  color: white;
+  padding: 15px 30px;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.navbar h2 {
+  margin: 0;
+}
+
+.nav-links {
+  display: flex;
+  gap: 20px;
+}
+
+.nav-links a {
+  color: white;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.nav-links a:hover {
+  text-decoration: underline;
+}
+
+/* Home */
+
+.home {
+  text-align: center;
+  padding: 70px 20px;
+}
+
+.home h1 {
+  color: #2563eb;
+  font-size: 55px;
+  margin-bottom: 15px;
+}
+
+.home p {
+  font-size: 22px;
+  color: #555;
+}
+
+.explore-btn {
+  margin-top: 20px;
+  padding: 12px 25px;
+  border: none;
+  border-radius: 8px;
+  background: #2563eb;
+  color: white;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.explore-btn:hover {
+  background: #1d4ed8;
+}
+
+.categories {
+  margin-top: 40px;
+
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.categories a {
+  text-decoration: none;
+  background: white;
+  color: black;
+
+  padding: 18px 25px;
+  border-radius: 12px;
+
+  font-size: 18px;
+  font-weight: 600;
+
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  transition: all 0.3s ease;
+}
+
+.categories a:hover {
+  transform: translateY(-5px);
+  background: #2563eb;
+  color: white;
+}
+
+/* Workers */
+
+.workers-container {
+  padding: 30px;
+}
+
+.workers-container h1 {
+  color: #2563eb;
+}
+
+.workers-container input {
+  width: 320px;
+  padding: 12px;
+  margin-bottom: 25px;
+
+  border-radius: 8px;
+  border: 1px solid #ccc;
+}
+
+/* Grid */
+
+.workers-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 20px;
+}
+
+/* Cards */
+
+.worker-card {
+  background: white;
+  padding: 20px;
+  border-radius: 12px;
+
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+.worker-card h2 {
+  color: #2563eb;
+  margin-top: 0;
+}
+
+/* Buttons */
+
+.btn-group {
+  margin-top: 15px;
+}
+
+.btn-group button {
+  padding: 10px 15px;
+  margin-right: 10px;
+  margin-top: 10px;
+
+  border: none;
+  border-radius: 8px;
+
+  background: #2563eb;
+  color: white;
+
+  cursor: pointer;
+}
+
+.btn-group button:hover {
+  background: #1d4ed8;
+}
+.footer {
+  text-align: center;
+  padding: 20px;
+  background: #2563eb;
+  color: white;
+  margin-top: 50px;
+}
