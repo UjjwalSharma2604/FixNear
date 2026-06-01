@@ -1,10 +1,10 @@
 import "./App.css";
 import { Routes, Route } from "react-router-dom";
 
-import Navbar from "./components/navbar";
+import Navbar from "./components/Navbar";
 import Footer from "./components/Footer";
 
-import Home from "./pages/home";
+import Home from "./pages/Home";
 import WorkerRegister from "./pages/WorkerRegister";
 import Workers from "./pages/Workers";
 import WorkerDetails from "./pages/WorkerDetails";
@@ -17,7 +17,7 @@ function App() {
 
       <Routes>
         <Route path="/" element={<Home />} />
-        <Route path="/register" element={<WorkerRegister />} />
+        <Route path="/worker-register" element={<WorkerRegister />} />
         <Route path="/workers" element={<Workers />} />
         <Route path="/worker/:id" element={<WorkerDetails />} />
         <Route path="/login" element={<Login />} />
