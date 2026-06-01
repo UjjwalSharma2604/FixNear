@@ -11,6 +11,8 @@ function WorkerRegister() {
     charges: "",
   });
 
+  const API_URL = "https://fixnear-backend.onrender.com";
+
   const handleChange = (e) => {
     setFormData({
       ...formData,
@@ -23,11 +25,11 @@ function WorkerRegister() {
 
     try {
       const res = await axios.post(
-        "http://localhost:5000/api/workers",
+        `${API_URL}/api/workers`,
         formData
       );
 
-      alert(res.data.message);
+      alert("Worker Registered Successfully ✅");
 
       setFormData({
         name: "",
@@ -38,8 +40,8 @@ function WorkerRegister() {
         charges: "",
       });
     } catch (error) {
-      console.log(error);
-      alert("Error registering worker");
+      console.error(error);
+      alert("Error registering worker ❌");
     }
   };
 
@@ -54,6 +56,7 @@ function WorkerRegister() {
           placeholder="Full Name"
           value={formData.name}
           onChange={handleChange}
+          required
         />
 
         <input
@@ -62,27 +65,30 @@ function WorkerRegister() {
           placeholder="Phone Number"
           value={formData.phone}
           onChange={handleChange}
+          required
         />
 
         <select
           name="service"
           value={formData.service}
           onChange={handleChange}
+          required
         >
           <option value="">Select Service</option>
-          <option>Electrician</option>
-          <option>Plumber</option>
-          <option>Carpenter</option>
-          <option>Painter</option>
-          <option>Cleaner</option>
+          <option value="Electrician">Electrician</option>
+          <option value="Plumber">Plumber</option>
+          <option value="Carpenter">Carpenter</option>
+          <option value="Painter">Painter</option>
+          <option value="Cleaner">Cleaner</option>
         </select>
 
         <input
           type="number"
           name="experience"
-          placeholder="Experience"
+          placeholder="Experience (Years)"
           value={formData.experience}
           onChange={handleChange}
+          required
         />
 
         <input
@@ -91,6 +97,7 @@ function WorkerRegister() {
           placeholder="City"
           value={formData.city}
           onChange={handleChange}
+          required
         />
 
         <input
@@ -99,10 +106,11 @@ function WorkerRegister() {
           placeholder="Service Charges"
           value={formData.charges}
           onChange={handleChange}
+          required
         />
 
         <button type="submit">
-          Register
+          Register Worker
         </button>
       </form>
     </div>

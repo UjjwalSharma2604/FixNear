@@ -1,5 +1,10 @@
 function Login() {
-  return <h1>Login Page</h1>;
+  return (
+    <div style={{ padding: "20px" }}>
+      <h1>Login Page</h1>
+      <p>Coming Soon...</p>
+    </div>
+  );
 }
 
 export default Login;
