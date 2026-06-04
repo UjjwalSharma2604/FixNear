@@ -1,10 +1,10 @@
 import "./App.css";
 import { Routes, Route } from "react-router-dom";
 
-import Navbar from "./components/Navbar";
+import Navbar from "./components/navbar";
 import Footer from "./components/Footer";
 
-import Home from "./pages/Home";
+import Home from "./pages/home";
 import WorkerRegister from "./pages/WorkerRegister";
 import Workers from "./pages/Workers";
 import WorkerDetails from "./pages/WorkerDetails";
